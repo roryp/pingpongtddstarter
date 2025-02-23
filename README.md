@@ -1,84 +1,41 @@
-# Roman to Arabic Kata with Ping Pong TDD Using JUnit Jupiter
+# Ping-Pong TDD Challenge
 
-This project demonstrates how to implement a Roman numeral converter that converts Roman numeral strings to their corresponding Arabic numeral values using a Ping Pong style of Test-Driven Development (TDD). The tests are written using JUnit Jupiter (JUnit 5).
+This README describes the process and steps for completing the challenge using the ping-pong TDD approach with two people. The approach emphasizes collaboration, alternating between writing tests and implementing code.
 
-## Prerequisites
+## Steps to Complete the Challenge
 
-- Java Development Kit (JDK) 21 or higher
-- Maven
-- An IDE or text editor of your choice
+1. **Define roles:**
+   - One person writes the tests (Red cycle) while the other writes the code (Green cycle).
+   - Swap roles after each cycle.
 
-## Setup Instructions
+2. **Write a small, failing test:**
+   - Start with a simple test. For example, test that converting the Roman numeral "I" yields the number 1.
 
-1. Clone the repository:
-   ```sh
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd pingpongtddstarter
-   ```
-3. Build the project using Maven:
-   ```sh
-   mvn clean install
-   ```
-4. Run the tests using Maven:
-   ```sh
-   mvn test
-   ```
+3. **Run the test to confirm failure:**
+   - This ensures that the test is valid and the feature is not already implemented.
 
-## Ping Pong TDD Workflow
+4. **Implement the simplest solution:**
+   - Write just enough code to pass the failing test.
+   - For example, implement conversion logic for "I".
 
-Follow these steps to implement the kata using a Ping Pong TDD cycle:
+5. **Run tests and verify that they pass:**
+   - Make sure your new code passes all tests.
 
-1. **Write a Failing Test:**
-   - Start with a simple test case (e.g., converting `"I"` to `1`).
-   - Create the test method in `TestAssertions.java`.
+6. **Swap roles and repeat:**
+   - The previous code-writer now writes the next test, such as testing that "II" converts to 2.
+   - Implement the minimal changes to make the new test pass.
 
-2. **Implement Minimal Code:**
-   - Write just enough code in `CalculateRomanToArabic.java` to make the test pass.
+7. **Incrementally add functionality:**
+   - Continue adding tests and updating the code for additional Roman numeral cases.
+   - Refactor the code as needed while ensuring all tests remain green.
 
-3. **Run the Tests:**
-   - Execute your tests using your build tool or IDE to verify that the new test passes.
+8. **Review:**
+   - At the end of the cycle, review the implementations, ensuring the design is clear and the tests cover a wide range of scenarios including error cases.
 
-4. **Refactor:**
-   - Clean up your code without changing functionality.
-   - Improve readability and structure.
+## Running the Tests
 
-5. **Repeat:**
-   - Continue with the next test case (e.g., handling `"II"`, `"III"`, `"IV"`, etc.).
-   - Gradually add support for more complex Roman numeral rules and edge cases.
+To run the tests, simply run the `TestAssertions` main method. The output should indicate that all tests have passed.
 
----
+## Conclusion
 
-## Suggested Test Cases
-
-Below are some test cases to help guide your development:
-
-- **Single Numerals:**
-  - `"I"` should return `1`
-  - `"V"` should return `5`
-  - `"X"` should return `10`
-
-- **Subtractive Notation:**
-  - `"IV"` should return `4`
-  - `"IX"` should return `9`
-
-- **Larger Numbers:**
-  - `"XL"` should return `40`
-  - `"XC"` should return `90`
-  - `"CD"` should return `400`
-  - `"CM"` should return `900`
-
-- **Complex Numerals:**
-  - `"MCMXCIV"` should return `1994`
-
-## Project Structure
-
-- `src/main/java/com/example/CalculateRomanToArabic.java`: Contains the logic for converting Roman numerals to Arabic numerals.
-- `src/main/java/com/example/Main.java`: The main entry point of the application.
-- `src/test/java/com/example/TestAssertions.java`: Contains the test cases for the Roman numeral converter.
-
-## License
-
-This project is licensed under the MIT License.
+This ping-pong TDD approach not only helps in writing code that works but also promotes collaboration and continuous improvement. Enjoy building and extending your Roman numeral converter!
