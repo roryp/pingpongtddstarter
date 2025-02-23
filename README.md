@@ -2,7 +2,43 @@
 
 ![Ping Pong TDD](pingpingtdd.gif)
 
-Welcome to the **Ping Pong TDD Starter** project. This project is designed to illustrate test-driven development (TDD) principles through a simple example.
+Welcome to the **Ping Pong TDD Starter** with [Github Copilot](https://docs.github.com/en/copilot). This project is designed to help you practice Test-Driven Development (TDD) using a collaborative approach. The goal is to implement a Roman numeral to Arabic numeral converter through a series of small, incremental steps, alternating between writing tests and implementing code.
+
+## Setting Up GitHub Copilot Features
+
+This project leverages the latest AI-powered coding features available in Visual Studio Code Insiders and GitHub Copilot. Follow these steps to set up your environment:
+
+### 1. Install Visual Studio Code Insiders
+Download the latest daily build of Visual Studio Code Insiders, which provides early access to cutting-edge features and improvements. You can install it side-by-side with your stable version if needed.
+
+- **Download:** [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
+
+### 2. Enable Copilot Next Edit Suggestions
+Copilot Next Edit Suggestions (NES) is designed to enhance your editing workflow by providing context-aware code suggestions—even when modifying existing code.
+
+- **Setup Steps:**
+  - Open your VS Code Insiders settings.
+  - Enable the setting by adding the following to your `settings.json`:
+    ```json
+    "github.copilot.nextEditSuggestions.enabled": true
+    ```
+  - Alternatively, use the Settings UI to search for “Copilot Next Edit Suggestions” and toggle it on.
+  - Reload VS Code to apply the changes.
+  - As you code, notice the ghost text suggestions; use the Tab key to navigate and accept them.
+
+For additional context, see the [Copilot Next Edit Suggestions blog post](https://code.visualstudio.com/blogs/2025/02/12/next-edit-suggestions).
+
+### 3. Enable Agent Mode for GitHub Copilot
+Agent mode takes your coding assistance to the next level. In this mode, GitHub Copilot can iterate on its own suggestions, identify errors, and even propose terminal commands to help complete tasks autonomously.
+
+- **Setup Steps:**
+  - Ensure you’re running VS Code Insiders.
+  - Open the Copilot Edits panel in VS Code.
+  - In the panel, switch the mode from “Edit” to “Agent” (this option is typically available near the model picker in the Copilot Chat interface).
+  - Confirm that the Agent mode setting is enabled in your settings.
+  - With Agent mode active, Copilot will not only suggest inline code changes but also infer and complete related subtasks.
+
+For more details on Agent mode, refer to the [GitHub Copilot: The Agent Awakens blog post](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens).
 
 ## Project Structure
 
@@ -21,34 +57,6 @@ src/
         example/
           TestAssertions.java
 ```
-
-## Getting Started
-
-1. **Clone the Repository**
-   
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. **Import the Project**
-   
-   Open the project in your favorite IDE (such as Eclipse or IntelliJ IDEA).
-
-3. **Build the Project**
-   
-   Use Maven to build the project:
-   
-   ```bash
-   mvn clean install
-   ```
-
-4. **Run the Tests**
-   
-   Execute the tests to verify everything is working:
-   
-   ```bash
-   mvn test
-   ```
 
 ## Usage
 
