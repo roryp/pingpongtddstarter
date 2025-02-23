@@ -4,7 +4,7 @@ This project demonstrates how to implement a Roman numeral converter that conver
 
 ## Prerequisites
 
-- Java Development Kit (JDK) 8 or higher
+- Java Development Kit (JDK) 21 or higher
 - Maven
 - An IDE or text editor of your choice
 
