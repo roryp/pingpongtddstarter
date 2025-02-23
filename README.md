@@ -20,15 +20,6 @@ src/
       com/
         example/
           TestAssertions.java
-target/
-  classes/
-    com/
-      example/
-        CalculateRomanToArabic.class
-  test-classes/
-    com/
-      example/
-        TestAssertions.class
 ```
 
 ## Getting Started
@@ -62,62 +53,6 @@ target/
 ## Usage
 
 Implement new features following TDD practices. Write a failing test first, then implement the minimal code to pass the test, and finally refactor the code.
-
-## Solution 
-
-```markdown
-# Roman to Arabic Conversion Kata with Ping Pong TDD
-
-This project demonstrates the Ping Pong TDD method to build a Roman numeral to Arabic number converter using JUnit 5. In Ping Pong TDD, two players alternate roles: one writes a failing test, and the other implements code to pass it.
-
----
-
-## Project Setup
-
-**Language:** Java 21 or above  
-**Build Tool:** Maven  
-**Test Framework:** JUnit Jupiter 5.12.0
-
-### Structure
-```
-src/main/java/com/example/CalculateRomanToArabic.java  // Conversion logic
-src/test/java/com/example/TestAssertions.java           // Test cases
-```
-*(Adjust package paths as needed)*
-
----
-
-## Prerequisites
-
-- Install Java 21 or above
-- Install Maven
-
----
-
-## Dependency
-
-Add the following dependency to your `pom.xml`:
-
-```xml
-<dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter</artifactId>
-    <version>5.12.0</version>
-    <scope>test</scope>
-</dependency>
-```
-
----
-
-## Running Tests
-
-Run the tests using Maven:
-
-```bash
-mvn test
-```
-
----
 
 ## First 20 Steps of Ping Pong TDD
 
