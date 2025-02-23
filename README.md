@@ -1,5 +1,7 @@
 # Ping Pong TDD Starter
 
+![Ping Pong TDD](pingpingtdd.gif)
+
 Welcome to the **Ping Pong TDD Starter** project. This project is designed to illustrate test-driven development (TDD) principles through a simple example.
 
 ## Project Structure
