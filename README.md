@@ -1,6 +1,8 @@
 # Ping Pong TDD Starter
 
-To Vibe code, check out [GitHub Copilot](vibecode.md)
+Vibe coding with [GitHub Copilot](vibecode.md) overview.
+
+Prefer the audio? NoteBookllm audio overview: [Audio](audio.wav)
 
 ![Ping Pong TDD](pingpingtdd.gif)
 
