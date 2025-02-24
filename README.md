@@ -1,5 +1,7 @@
 # Ping Pong TDD Starter
 
+To Vibe code, check out [GitHub Copilot](vibecode.md)
+
 ![Ping Pong TDD](pingpingtdd.gif)
 
 Welcome to the **Ping Pong TDD Starter** with [Github Copilot](https://docs.github.com/en/copilot). This project is designed to help you practice Test-Driven Development (TDD) using a collaborative approach. The goal is to implement a Roman numeral to Arabic numeral converter through a series of small, incremental steps, alternating between writing tests and implementing code.
