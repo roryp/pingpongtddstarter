@@ -463,4 +463,7 @@ public class CalculateRomanToArabic {
 
 Continue the Ping Pong TDD process by adding tests for cases like `"VI"` (6), `"IX"` (9), `"XL"` (40), and handling invalid inputs. This builds a robust converter incrementally.
 
+## Solve with GitHub Copilot chat agent mode
+
+"Solve and run the tests until the number 2999"
 ---
