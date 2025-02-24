@@ -1,6 +1,6 @@
 # Ping Pong TDD Starter
 
-To Vibe code, check out [GitHub Copilot](vibecode.md)
+To Vibe code with Github Copilot, first check out [Github Copilot Features](vibecode.md)
 
 ![Ping Pong TDD](pingpingtdd.gif)
 
