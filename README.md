@@ -27,6 +27,10 @@ Copilot Next Edit Suggestions (NES) is designed to enhance your editing workflow
     "github.copilot.nextEditSuggestions.enabled": true
     ```
   - Alternatively, use the Settings UI to search for “Copilot Next Edit Suggestions” and toggle it on.
+    - Set the model to `gpt-4o-copilot` by adding the following line to your `settings.json`:
+    ```json
+    "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+    ```
   - Reload VS Code to apply the changes.
   - As you code, notice the ghost text suggestions; use the Tab key to navigate and accept them.
 
