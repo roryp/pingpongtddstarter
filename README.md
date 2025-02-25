@@ -61,7 +61,7 @@ Copilot Next Edit Suggestions (NES) is designed to enhance your editing workflow
     ```json
     "github.copilot.nextEditSuggestions.enabled": true
     ```
-  - Alternatively, use the Settings UI to search for “Copilot Next Edit Suggestions” and toggle it on.
+  - Alternatively, use the Settings UI to search for "Copilot Next Edit Suggestions" and toggle it on.
   - We recommend setting the model to `gpt-4o-copilot` by adding the following line to your `settings.json`:
     ```json
     "github.copilot.selectedCompletionModel": "gpt-4o-copilot",
@@ -78,9 +78,9 @@ If not already installed, install the [Java extension pack](https://marketplace.
 Agent mode takes your coding assistance to the next level. In this mode, GitHub Copilot can iterate on its own suggestions, identify errors, and even propose terminal commands to help complete tasks autonomously.
 
 - **Setup Steps:**
-  - Ensure you’re running VS Code Insiders.
+  - Ensure you're running VS Code Insiders.
   - Open the Copilot Edits panel in VS Code.
-  - In the panel, switch the mode from “Edit” to “Agent” (this option is typically available near the model picker in the Copilot Chat interface).
+  - In the panel, switch the mode from "Edit" to "Agent" (this option is typically available near the model picker in the Copilot Chat interface).
   - Confirm that the Agent mode setting is enabled in your settings.
   - With Agent mode active, Copilot will not only suggest inline code changes but also infer and complete related subtasks.
 
@@ -102,6 +102,50 @@ src/
       com/
         example/
           TestAssertions.java
+```
+
+## Maven Configuration Details
+
+This project uses Maven for dependency management and build automation. The `pom.xml` file contains the following key configurations:
+
+- Java version: 17
+- JUnit Jupiter for unit testing
+- Maven Surefire Plugin for test execution
+- Maven Compiler Plugin for compilation
+
+Maven handles all dependencies and build processes automatically, allowing you to focus on the TDD practice without worrying about configuration.
+
+## Running Tests Locally
+
+You can run the tests in several ways:
+
+### Using Maven Command Line
+
+```bash
+# Run all tests in the project
+mvn test
+
+# Run a specific test class
+mvn -Dtest=TestAssertions test
+
+# Run a specific test method
+mvn -Dtest=TestAssertions#testIV test
+```
+
+### Using VS Code
+
+1. Open the test file in the editor
+2. Click on the "Run Test" button appearing above the test method
+3. Alternatively, use the Test Explorer panel to run individual or all tests
+4. You can also right-click on a test method or class and select "Run Test"
+
+### Using VS Code Terminal
+
+You can open the integrated terminal in VS Code and run Maven commands directly:
+
+```bash
+./mvnw test    # Use this on Unix/macOS
+mvnw.cmd test  # Use this on Windows
 ```
 
 ## Usage
@@ -470,5 +514,23 @@ Continue the Ping Pong TDD process by adding tests for cases like `"VI"` (6), `"
 
 ## Solve with GitHub Copilot chat agent mode
 
-"Solve and run the tests until the number 2999"
----
+To solve this Roman numeral conversion problem using GitHub Copilot's agent mode:
+
+1. Open the GitHub Copilot chat panel in VS Code
+2. Switch to "Agent" mode in the interface
+3. Prompt Copilot with a specific request like: "Solve and run the tests until the number 2999"
+4. Observe how Copilot:
+   - Analyzes the existing code and tests
+   - Creates new test cases incrementally
+   - Implements code to handle those tests
+   - Refactors for efficiency and readability
+   - Validates the solution with all test cases
+
+Agent mode is particularly effective for TDD as it understands the concept of incremental development and can reason about test coverage and edge cases.
+
+## Additional Resources
+
+- [Martin Fowler's Guide to TDD](https://martinfowler.com/articles/practical-test-pyramid.html)
+- [Roman Numeral Conversion Rules](https://en.wikipedia.org/wiki/Roman_numerals)
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
