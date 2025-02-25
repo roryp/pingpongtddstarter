@@ -41,16 +41,18 @@ Example:
 
 There is also no need to be able to convert numbers larger than 3000 (The Romans themselves didn't tend to go any higher).
 
-## Setting Up GitHub Copilot Features
+## Setting Up Your Environment
 
-We encourage you attempt the challenge and learn the latest AI-powered coding features available in Visual Studio Code Insiders and GitHub Copilot. Follow these steps to set up your environment:
+We encourage you to attempt the challenge and learn the latest AI-powered coding features available in Visual Studio Code Insiders and GitHub Copilot. Follow these steps to set up your environment:
 
 ### 1. Install Visual Studio Code Insiders
 Download the latest daily build of Visual Studio Code Insiders, which provides early access to cutting-edge features and improvements. You can install it side-by-side with your stable version if needed.
 
 - **Download:** [Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
 
-### 2. Enable Copilot Next Edit Suggestions
+### 2. Install [GitHub.copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+
+### 3. Enable Copilot Next Edit Suggestions
 Copilot Next Edit Suggestions (NES) is designed to enhance your editing workflow by providing context-aware code suggestions—even when modifying existing code.
 
 - **Setup Steps:**
@@ -69,7 +71,10 @@ Copilot Next Edit Suggestions (NES) is designed to enhance your editing workflow
 
 For additional context, see the [Copilot Next Edit Suggestions blog post](https://code.visualstudio.com/blogs/2025/02/12/next-edit-suggestions).
 
-### 3. Enable Agent Mode for GitHub Copilot
+### 4. Install the Java extension pack
+If not already installed, install the [Java extension pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) in VS Code Insiders to enable Java development features.
+
+### 5. Enable Agent Mode for GitHub Copilot
 Agent mode takes your coding assistance to the next level. In this mode, GitHub Copilot can iterate on its own suggestions, identify errors, and even propose terminal commands to help complete tasks autonomously.
 
 - **Setup Steps:**
