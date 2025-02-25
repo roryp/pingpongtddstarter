@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestAssertions {
 
     @Test
-    public void test1() {
+    public void testI() {
         CalculateRomanToArabic converter = new CalculateRomanToArabic();
         assertEquals(1, converter.convert("I"));
     }
