@@ -1,5 +1,7 @@
 # GitHub Copilot Features Overview
 
+![Vibe](vibe.gif)
+
 ## 1. Code Completion Features
 
 ### Code Snippet Suggestions
