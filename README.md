@@ -40,6 +40,7 @@ Example:
 | MCMXLIV       |   1000 + (1000 - 100) + (50 - 10) + (5 - 1)    | 1944       | addition and substraction       |
 
 There is also no need to be able to convert numbers larger than 3000 (The Romans themselves didn't tend to go any higher).
+(Solution can be found in the Solution branch)
 
 ## Setting Up Your Environment
 
