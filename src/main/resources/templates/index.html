@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .error {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffebee;
+            color: #c62828;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .instructions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        .instructions h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Roman Numeral Converter</h1>
+        
+        <form action="/convert" method="post">
+            <label for="romanNumeral">Enter a Roman Numeral:</label>
+            <input type="text" id="romanNumeral" name="romanNumeral" required 
+                   placeholder="e.g. I, IV, IX, MCMXCIV" th:value="${romanNumeral}">
+            <button type="submit">Convert to Arabic</button>
+        </form>
+        
+        <div class="result" th:if="${result != null}">
+            <p>
+                The Arabic value of <strong th:text="${romanNumeral}"></strong> is 
+                <strong th:text="${result}"></strong>
+            </p>
+        </div>
+        
+        <div class="error" th:if="${error != null}">
+            <p th:text="${error}"></p>
+        </div>
+        
+        <div class="instructions">
+            <h3>Valid Roman Numerals</h3>
+            <ul>
+                <li>I = 1</li>
+                <li>V = 5</li>
+                <li>X = 10</li>
+                <li>L = 50</li>
+                <li>C = 100</li>
+                <li>D = 500</li>
+                <li>M = 1000</li>
+            </ul>
+            <p>Examples: IV = 4, IX = 9, XLII = 42, MCMXCIV = 1994</p>
+        </div>
+    </div>
+</body>
+</html>
